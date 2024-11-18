@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelap-Kelip</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .kelap-kelip {
+      font-size: 5em;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #fff; /* Warna dasar teks */
+      animation: blinkRainbow 2s infinite alternate, colorChange 5s infinite linear;
+    }
+
+    /* Animasi kelap kelip */
+    @keyframes blinkRainbow {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.2;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Animasi perubahan warna pelangi */
+    @keyframes colorChange {
+      0% { color: #ff0000; } 
+      14% { color: #ff7f00; }
+      28% { color: #ffff00; }
+      42% { color: #00ff00; }
+      57% { color: #0000ff; }
+      71% { color: #4b0082; }
+      85% { color: #8b00ff; }
+      100% { color: #ff0000; }
+    }
+  </style>
+</head>
+<body>
+  <div class="kelap-kelip">Zeta Baru Bangun</div>
+</body>
+</html>
